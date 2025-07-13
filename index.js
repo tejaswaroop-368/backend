@@ -49,10 +49,9 @@ app.get('/twitter', (req, res) => {
   res.send('Hello Twitter!')
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${port}`)
 })
-
 
 app.get('/git', (req, res) => {
   res.json(gitData)
